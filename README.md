@@ -1,4 +1,4 @@
-H5P.Mandala 1.1.1 – überarbeitete Testversion
+#H5P.Mandala 1.1.1 – überarbeitete Testversion
 
 Eigenständiger H5P-Inhaltstyp zum flächenweisen Ausmalen eines von der Lehrkraft
 hochgeladenen Schwarz-Weiß-Bildes. Ausschließlich JPG/JPEG und PNG;
