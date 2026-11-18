@@ -1,0 +1,182 @@
+{
+  "semantics": [
+    {
+      "label": "Überschrift"
+    },
+    {
+      "label": "Aufgabenstellung"
+    },
+    {
+      "label": "Schwarz-Weiß-Bild (JPG oder PNG)"
+    },
+    {
+      "label": "Bildbeschreibung"
+    },
+    {
+      "label": "Eigene Farbpalette (ergänzt die Standardfarben)",
+      "field": {
+        "label": "Farbe",
+        "fields": [
+          {
+            "label": "Farbname"
+          },
+          {
+            "label": "Farbcode (#RRGGBB)",
+            "default": "Eigene Farbe"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Einstellungen",
+      "fields": [
+        {
+          "label": "Freie Farbauswahl erlauben"
+        },
+        {
+          "label": "PNG-Download erlauben",
+          "default": "PNG herunterladen"
+        },
+        {
+          "label": "Zoom aktivieren"
+        },
+        {
+          "label": "Vollbild aktivieren",
+          "default": "Vollbild"
+        },
+        {
+          "label": "Fertig-Schaltfläche anzeigen (ohne Punkte)",
+          "default": "Fertig"
+        },
+        {
+          "label": "Grenzwert für dunkle Konturen"
+        },
+        {
+          "label": "Maximale Bildkante der Arbeitskopie (Pixel)"
+        },
+        {
+          "label": "Standardfarben ausblenden"
+        },
+        {
+          "label": "Aktiven RGB-Farbwert anzeigen"
+        }
+      ]
+    },
+    {
+      "label": "Textänderungen (Standardsprache: Deutsch)",
+      "fields": [
+        {
+          "label": "Sprache der Bedienoberfläche"
+        },
+        {
+          "label": "Fülleimer",
+          "default": "Fülleimer"
+        },
+        {
+          "label": "Radierer",
+          "default": "Radierer"
+        },
+        {
+          "label": "Rückgängig",
+          "default": "Rückgängig"
+        },
+        {
+          "label": "Wiederholen",
+          "default": "Wiederholen"
+        },
+        {
+          "label": "Zurücksetzen",
+          "default": "Zurücksetzen"
+        },
+        {
+          "label": "Das gesamte Bild zurücksetzen?",
+          "default": "Das gesamte Bild zurücksetzen?"
+        },
+        {
+          "label": "PNG herunterladen",
+          "default": "PNG herunterladen"
+        },
+        {
+          "label": "Vergrößern",
+          "default": "Vergrößern"
+        },
+        {
+          "label": "Verkleinern",
+          "default": "Verkleinern"
+        },
+        {
+          "label": "Vollbild",
+          "default": "Vollbild"
+        },
+        {
+          "label": "Eigene Farbe",
+          "default": "Eigene Farbe"
+        },
+        {
+          "label": "Bild wird vorbereitet …",
+          "default": "Bild wird vorbereitet …"
+        },
+        {
+          "label": "Das Bild konnte nicht geladen werden. Bitte verwenden Sie ein JPG oder PNG.",
+          "default": "Das Bild konnte nicht geladen werden. Bitte verwenden Sie ein JPG oder PNG."
+        },
+        {
+          "label": "Bitte wählen Sie eine helle Fläche zwischen den Konturen.",
+          "default": "Bitte wählen Sie eine helle Fläche zwischen den Konturen."
+        },
+        {
+          "label": "Fläche eingefärbt.",
+          "default": "Fläche eingefärbt."
+        },
+        {
+          "label": "Malstand wiederhergestellt.",
+          "default": "Malstand wiederhergestellt."
+        },
+        {
+          "label": "Bild zurückgesetzt.",
+          "default": "Bild zurückgesetzt."
+        },
+        {
+          "label": "Wählen Sie eine Farbe und tippen Sie in eine Fläche. Bei vergrößerter Ansicht das Bild ziehen, um es zu verschieben. Mit zwei Fingern zoomen. Tastatur: Tab zum Bild, Pfeiltasten bewegen die Markierung, Eingabe färbt die Fläche.",
+          "default": "Wählen Sie eine Farbe und tippen Sie in eine Fläche. Bei vergrößerter Ansicht das Bild ziehen, um es zu verschieben. Mit zwei Fingern zoomen. Tastatur: Tab zum Bild, Pfeiltasten bewegen die Markierung, Eingabe färbt die Fläche."
+        },
+        {
+          "label": "Fertig",
+          "default": "Fertig"
+        },
+        {
+          "label": "Bearbeitung abgeschlossen. Das Bild kann heruntergeladen oder mit „Weiter bearbeiten“ erneut geöffnet werden.",
+          "default": "Bearbeitung abgeschlossen. Das Bild kann heruntergeladen oder mit „Weiter bearbeiten“ erneut geöffnet werden."
+        },
+        {
+          "label": "Weiter bearbeiten",
+          "default": "Weiter bearbeiten"
+        },
+        {
+          "label": "Vollbild verlassen",
+          "default": "Vollbild verlassen"
+        },
+        {
+          "label": "Die vergrößerte Ansicht wird innerhalb der Einbettung angezeigt.",
+          "default": "Die vergrößerte Ansicht wird innerhalb der Einbettung angezeigt."
+        },
+        {
+          "label": "Das Bild oder die Linienerkennung wurde geändert. Der alte Malstand passt nicht mehr.",
+          "default": "Das Bild oder die Linienerkennung wurde geändert. Der alte Malstand passt nicht mehr."
+        },
+        {
+          "label": "Bereits verwendete eigene Farben",
+          "default": "Bereits verwendete eigene Farben"
+        },
+        {
+          "label": "Aktive Farbe",
+          "default": "Aktive Farbe"
+        },
+        {
+          "label": "Keine Palette hinterlegt. Bitte eine eigene Farbe wählen.",
+          "default": "Keine Palette hinterlegt. Bitte eine eigene Farbe wählen."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Mandala / Ausmalbild",
+  "machineName": "H5P.Mandala",
+  "majorVersion": 1,
+  "minorVersion": 1,
+  "patchVersion": 1,
+  "runnable": 1,
+  "author": "H5P Mandala contributors",
+  "license": "MIT",
+  "description": "Color areas of uploaded JPG and PNG raster images.",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 24
+  },
+  "embedTypes": [
+    "div",
+    "iframe"
+  ],
+  "preloadedJs": [
+    {
+      "path": "scripts/texts.js"
+    },
+    {
+      "path": "scripts/regions.js"
+    },
+    {
+      "path": "scripts/mandala.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "styles/mandala.css"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.Mandala",
+      "majorVersion": 1,
+      "minorVersion": 1
+    }
+  ]
+}

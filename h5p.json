@@ -1,0 +1,1 @@
+{"title": "Mandala – Ausmalbild", "language": "de", "mainLibrary": "H5P.Mandala", "embedTypes": ["div", "iframe"], "license": "U", "preloadedDependencies": [{"machineName": "H5P.Mandala", "majorVersion": 1, "minorVersion": 1}], "editorDependencies": [{"machineName": "H5PEditor.Mandala", "majorVersion": 1, "minorVersion": 1}]}

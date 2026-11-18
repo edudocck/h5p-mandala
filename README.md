@@ -1,4 +1,4 @@
-#H5P.Mandala 1.1.1 – überarbeitete Testversion
+# H5P.Mandala 1.1.1 – überarbeitete Testversion
 
 Eigenständiger H5P-Inhaltstyp zum flächenweisen Ausmalen eines von der Lehrkraft
 hochgeladenen Schwarz-Weiß-Bildes. Ausschließlich JPG/JPEG und PNG;
@@ -8,7 +8,8 @@ Autorenformular und wird mit dem Paket installiert. Code unter MIT-Lizenz.
 
 Schnellstart in Moodle
 
-Als Administrator die Datei H5P.Mandala-1.1.1.h5p unter
+Die Datei `H5P.Mandala-1.1.1.h5p` von der [Release-Seite](../../releases)
+herunterladen und als Administrator unter
 Website-Administration → H5P → H5P-Inhaltstypen verwalten hochladen.
 Menübezeichnungen können je nach Moodle-Version abweichen.
 
@@ -113,23 +114,17 @@ werden gesperrt, der Button heißt Weiter bearbeiten. Download und Zoom bleiben
 nutzbar. Weiter bearbeiten öffnet die Werkzeuge erneut. Ein bereits
 serverseitig gesetzter Moodle-Abschluss wird dadurch nicht zurückgenommen.
 
-Entwicklung / reproduzierbarer Build
+## Quellcode und Paket erstellen
 
-JavaScript und CSS werden direkt ausgeliefert. Kein npm-Build notwendig.
+`H5P.Mandala-1.1/` enthält den Inhaltstyp, `H5PEditor.Mandala-1.1/`
+die Erweiterung für den H5P-Editor. JavaScript und CSS werden direkt
+ausgeliefert. Die Datei `h5p.json` ist das Manifest des Installationspakets.
 
-python3 build.py
-npm install
-npm test
-python3 -m http.server 8765 --directory .
-# In einem weiteren Terminal:
-npx playwright install chromium
-npm run test:browser
+Das Installationspaket lässt sich im Repository-Stamm mit ZIP erzeugen.
 
-build.py benötigt Python 3 und Pillow und erzeugt Bibliotheks- und Demo-Paket
-im benachbarten Ordner deliverables. Die HTML-Datei unter demo/index.html
-ist eine lokale Vorschau mit kleinem H5P-Testadapter, keine vollständige
-Moodle-/H5P-Integration. Zum Testen im Browser http://localhost:8765/demo/
-öffnen. Der Testadapter speichert keine Zustände automatisch.
+```bash
+zip -r ../H5P.Mandala-1.1.1.h5p h5p.json H5P.Mandala-1.1 H5PEditor.Mandala-1.1
+```
 
 Grenzen und Teststand
 

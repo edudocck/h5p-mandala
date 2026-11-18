@@ -1,0 +1,378 @@
+[
+  {
+    "name": "title",
+    "type": "text",
+    "label": "Überschrift",
+    "optional": true,
+    "maxLength": 120
+  },
+  {
+    "name": "description",
+    "type": "text",
+    "widget": "textarea",
+    "label": "Aufgabenstellung",
+    "optional": true,
+    "maxLength": 2000
+  },
+  {
+    "name": "image",
+    "type": "image",
+    "label": "Schwarz-Weiß-Bild (JPG oder PNG)",
+    "description": "Geschlossene dunkle Konturen auf hellen Flächen verwenden. Nur JPG und PNG werden unterstützt."
+  },
+  {
+    "name": "alt",
+    "type": "text",
+    "label": "Bildbeschreibung",
+    "default": "Mandala",
+    "maxLength": 300
+  },
+  {
+    "name": "palette",
+    "type": "list",
+    "label": "Eigene Farbpalette (ergänzt die Standardfarben)",
+    "optional": true,
+    "entity": "Farbe",
+    "min": 0,
+    "max": 32,
+    "field": {
+      "name": "item",
+      "type": "group",
+      "label": "Farbe",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Farbname"
+        },
+        {
+          "name": "color",
+          "type": "text",
+          "label": "Farbcode (#RRGGBB)",
+          "default": "#e53935",
+          "regexp": {
+            "pattern": "^#[0-9a-fA-F]{6}$",
+            "modifiers": ""
+          },
+          "widget": "mandalaColor"
+        }
+      ]
+    }
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Einstellungen",
+    "expanded": false,
+    "fields": [
+      {
+        "name": "customColor",
+        "type": "boolean",
+        "label": "Freie Farbauswahl erlauben",
+        "default": true
+      },
+      {
+        "name": "download",
+        "type": "boolean",
+        "label": "PNG-Download erlauben",
+        "default": true
+      },
+      {
+        "name": "zoom",
+        "type": "boolean",
+        "label": "Zoom aktivieren",
+        "default": true
+      },
+      {
+        "name": "fullscreen",
+        "type": "boolean",
+        "label": "Vollbild aktivieren",
+        "default": true
+      },
+      {
+        "name": "finish",
+        "type": "boolean",
+        "label": "Fertig-Schaltfläche anzeigen (ohne Punkte)",
+        "default": true
+      },
+      {
+        "name": "threshold",
+        "type": "number",
+        "label": "Grenzwert für dunkle Konturen",
+        "description": "Pixel bis zu diesem Helligkeitswert begrenzen die Fläche. Offene Konturen werden nicht geschlossen.",
+        "min": 20,
+        "max": 240,
+        "default": 110,
+        "decimals": 0
+      },
+      {
+        "name": "maxSize",
+        "type": "number",
+        "label": "Maximale Bildkante der Arbeitskopie (Pixel)",
+        "description": "Große Bilder werden intern verkleinert. Das hochgeladene Original bleibt im Paket.",
+        "min": 256,
+        "max": 2048,
+        "default": 1536,
+        "decimals": 0
+      },
+      {
+        "name": "hideStandardColors",
+        "type": "boolean",
+        "label": "Standardfarben ausblenden",
+        "optional": true,
+        "default": false,
+        "description": "Es erscheinen nur die eigenen Farben. Bei leerer Palette wird die freie Farbauswahl automatisch eingeschaltet."
+      },
+      {
+        "name": "showColorValue",
+        "type": "boolean",
+        "label": "Aktiven RGB-Farbwert anzeigen",
+        "optional": true,
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "Textänderungen (Standardsprache: Deutsch)",
+    "common": true,
+    "fields": [
+      {
+        "name": "language",
+        "type": "select",
+        "label": "Sprache der Bedienoberfläche",
+        "optional": true,
+        "default": "de",
+        "options": [
+          {
+            "value": "de",
+            "label": "Deutsch (Standard)"
+          },
+          {
+            "value": "en",
+            "label": "English"
+          }
+        ]
+      },
+      {
+        "name": "fill",
+        "type": "text",
+        "label": "Fülleimer",
+        "default": "Fülleimer",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "erase",
+        "type": "text",
+        "label": "Radierer",
+        "default": "Radierer",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "undo",
+        "type": "text",
+        "label": "Rückgängig",
+        "default": "Rückgängig",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "redo",
+        "type": "text",
+        "label": "Wiederholen",
+        "default": "Wiederholen",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "reset",
+        "type": "text",
+        "label": "Zurücksetzen",
+        "default": "Zurücksetzen",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "confirm",
+        "type": "text",
+        "label": "Das gesamte Bild zurücksetzen?",
+        "default": "Das gesamte Bild zurücksetzen?",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "download",
+        "type": "text",
+        "label": "PNG herunterladen",
+        "default": "PNG herunterladen",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "zoomIn",
+        "type": "text",
+        "label": "Vergrößern",
+        "default": "Vergrößern",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "zoomOut",
+        "type": "text",
+        "label": "Verkleinern",
+        "default": "Verkleinern",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "fullscreen",
+        "type": "text",
+        "label": "Vollbild",
+        "default": "Vollbild",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "color",
+        "type": "text",
+        "label": "Eigene Farbe",
+        "default": "Eigene Farbe",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "loading",
+        "type": "text",
+        "label": "Bild wird vorbereitet …",
+        "default": "Bild wird vorbereitet …",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "error",
+        "type": "text",
+        "label": "Das Bild konnte nicht geladen werden. Bitte verwenden Sie ein JPG oder PNG.",
+        "default": "Das Bild konnte nicht geladen werden. Bitte verwenden Sie ein JPG oder PNG.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "boundary",
+        "type": "text",
+        "label": "Bitte wählen Sie eine helle Fläche zwischen den Konturen.",
+        "default": "Bitte wählen Sie eine helle Fläche zwischen den Konturen.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "changed",
+        "type": "text",
+        "label": "Fläche eingefärbt.",
+        "default": "Fläche eingefärbt.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "restored",
+        "type": "text",
+        "label": "Malstand wiederhergestellt.",
+        "default": "Malstand wiederhergestellt.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "resetDone",
+        "type": "text",
+        "label": "Bild zurückgesetzt.",
+        "default": "Bild zurückgesetzt.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "hint",
+        "type": "text",
+        "label": "Wählen Sie eine Farbe und tippen Sie in eine Fläche. Bei vergrößerter Ansicht das Bild ziehen, um es zu verschieben. Mit zwei Fingern zoomen. Tastatur: Tab zum Bild, Pfeiltasten bewegen die Markierung, Eingabe färbt die Fläche.",
+        "default": "Wählen Sie eine Farbe und tippen Sie in eine Fläche. Bei vergrößerter Ansicht das Bild ziehen, um es zu verschieben. Mit zwei Fingern zoomen. Tastatur: Tab zum Bild, Pfeiltasten bewegen die Markierung, Eingabe färbt die Fläche.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "finish",
+        "type": "text",
+        "label": "Fertig",
+        "default": "Fertig",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "finished",
+        "type": "text",
+        "label": "Bearbeitung abgeschlossen. Das Bild kann heruntergeladen oder mit „Weiter bearbeiten“ erneut geöffnet werden.",
+        "default": "Bearbeitung abgeschlossen. Das Bild kann heruntergeladen oder mit „Weiter bearbeiten“ erneut geöffnet werden.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "continueEditing",
+        "type": "text",
+        "label": "Weiter bearbeiten",
+        "default": "Weiter bearbeiten",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "exitFullscreen",
+        "type": "text",
+        "label": "Vollbild verlassen",
+        "default": "Vollbild verlassen",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "fullscreenFallback",
+        "type": "text",
+        "label": "Die vergrößerte Ansicht wird innerhalb der Einbettung angezeigt.",
+        "default": "Die vergrößerte Ansicht wird innerhalb der Einbettung angezeigt.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "changedImage",
+        "type": "text",
+        "label": "Das Bild oder die Linienerkennung wurde geändert. Der alte Malstand passt nicht mehr.",
+        "default": "Das Bild oder die Linienerkennung wurde geändert. Der alte Malstand passt nicht mehr.",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "usedColors",
+        "type": "text",
+        "label": "Bereits verwendete eigene Farben",
+        "default": "Bereits verwendete eigene Farben",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "activeColor",
+        "type": "text",
+        "label": "Aktive Farbe",
+        "default": "Aktive Farbe",
+        "optional": true,
+        "maxLength": 2000
+      },
+      {
+        "name": "noPalette",
+        "type": "text",
+        "label": "Keine Palette hinterlegt. Bitte eine eigene Farbe wählen.",
+        "default": "Keine Palette hinterlegt. Bitte eine eigene Farbe wählen.",
+        "optional": true,
+        "maxLength": 2000
+      }
+    ],
+    "description": "Deutsch ist die Vorgabesprache. Englisch kann mit hinterlegten Texten gewählt werden.",
+    "widget": "mandalaTexts"
+  }
+]

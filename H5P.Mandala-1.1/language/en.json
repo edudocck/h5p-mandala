@@ -1,0 +1,182 @@
+{
+  "semantics": [
+    {
+      "label": "Heading"
+    },
+    {
+      "label": "Instructions"
+    },
+    {
+      "label": "Black and white JPG or PNG"
+    },
+    {
+      "label": "Image description"
+    },
+    {
+      "label": "Custom palette (added to standard colors)",
+      "field": {
+        "label": "Color",
+        "fields": [
+          {
+            "label": "Color name"
+          },
+          {
+            "label": "Color code (#RRGGBB)",
+            "default": "Eigene Farbe"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Settings",
+      "fields": [
+        {
+          "label": "Allow custom colors"
+        },
+        {
+          "label": "Allow PNG download",
+          "default": "PNG herunterladen"
+        },
+        {
+          "label": "Enable zoom"
+        },
+        {
+          "label": "Enable fullscreen",
+          "default": "Vollbild"
+        },
+        {
+          "label": "Show Finish button (no score)",
+          "default": "Fertig"
+        },
+        {
+          "label": "Outline threshold"
+        },
+        {
+          "label": "Maximum working image edge (pixels)"
+        },
+        {
+          "label": "Hide standard colors"
+        },
+        {
+          "label": "Show active RGB color value"
+        }
+      ]
+    },
+    {
+      "label": "Interface texts (default language: German)",
+      "fields": [
+        {
+          "label": "Interface language"
+        },
+        {
+          "label": "Fill",
+          "default": "Fülleimer"
+        },
+        {
+          "label": "Eraser",
+          "default": "Radierer"
+        },
+        {
+          "label": "Undo",
+          "default": "Rückgängig"
+        },
+        {
+          "label": "Redo",
+          "default": "Wiederholen"
+        },
+        {
+          "label": "Reset",
+          "default": "Zurücksetzen"
+        },
+        {
+          "label": "Reset the entire image?",
+          "default": "Das gesamte Bild zurücksetzen?"
+        },
+        {
+          "label": "Download PNG",
+          "default": "PNG herunterladen"
+        },
+        {
+          "label": "Zoom in",
+          "default": "Vergrößern"
+        },
+        {
+          "label": "Zoom out",
+          "default": "Verkleinern"
+        },
+        {
+          "label": "Fullscreen",
+          "default": "Vollbild"
+        },
+        {
+          "label": "Custom color",
+          "default": "Eigene Farbe"
+        },
+        {
+          "label": "Preparing image …",
+          "default": "Bild wird vorbereitet …"
+        },
+        {
+          "label": "Could not load image. Please use a JPG or PNG.",
+          "default": "Das Bild konnte nicht geladen werden. Bitte verwenden Sie ein JPG oder PNG."
+        },
+        {
+          "label": "Please select a light area between the outlines.",
+          "default": "Bitte wählen Sie eine helle Fläche zwischen den Konturen."
+        },
+        {
+          "label": "Area colored.",
+          "default": "Fläche eingefärbt."
+        },
+        {
+          "label": "Coloring restored.",
+          "default": "Malstand wiederhergestellt."
+        },
+        {
+          "label": "Image reset.",
+          "default": "Bild zurückgesetzt."
+        },
+        {
+          "label": "Choose a color and tap an area. Drag to pan when zoomed in. Pinch with two fingers to zoom. Keyboard: Tab to the image, use arrow keys to move the marker, Enter to color.",
+          "default": "Wählen Sie eine Farbe und tippen Sie in eine Fläche. Bei vergrößerter Ansicht das Bild ziehen, um es zu verschieben. Mit zwei Fingern zoomen. Tastatur: Tab zum Bild, Pfeiltasten bewegen die Markierung, Eingabe färbt die Fläche."
+        },
+        {
+          "label": "Finish",
+          "default": "Fertig"
+        },
+        {
+          "label": "Activity completed. Download the image or select Continue editing to make more changes.",
+          "default": "Bearbeitung abgeschlossen. Das Bild kann heruntergeladen oder mit „Weiter bearbeiten“ erneut geöffnet werden."
+        },
+        {
+          "label": "Continue editing",
+          "default": "Weiter bearbeiten"
+        },
+        {
+          "label": "Exit fullscreen",
+          "default": "Vollbild verlassen"
+        },
+        {
+          "label": "The enlarged view is displayed within the embed.",
+          "default": "Die vergrößerte Ansicht wird innerhalb der Einbettung angezeigt."
+        },
+        {
+          "label": "The image or outline settings changed. The previous coloring no longer matches.",
+          "default": "Das Bild oder die Linienerkennung wurde geändert. Der alte Malstand passt nicht mehr."
+        },
+        {
+          "label": "Previously used custom colors",
+          "default": "Bereits verwendete eigene Farben"
+        },
+        {
+          "label": "Active color",
+          "default": "Aktive Farbe"
+        },
+        {
+          "label": "No palette configured. Please choose a custom color.",
+          "default": "Keine Palette hinterlegt. Bitte eine eigene Farbe wählen."
+        }
+      ]
+    }
+  ]
+}
